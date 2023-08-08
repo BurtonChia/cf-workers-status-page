@@ -57,32 +57,5 @@ monitors:
     url: 'https://go.burtnet.xyz/uptimeping'
     method: GET
     expectStatus: 200
-    followRedirect: false # should fetch follow redirects, default=false
-    linkable: false # allows the title to be a link, default=true
-
-  - id: gw-batcave-viewqwest
-    name: GW - BaTcave - Viewqwest
-    description: 'Primary uplink (Viewqwest) from BaTcave'
-    url: 'icmp-ping://gw1.burtnet.xyz'
-    method: GET
-    expectStatus: 200
-    followRedirect: false # should fetch follow redirects, default=false
-    linkable: false # allows the title to be a link, default=true
-
-  - id: gw-batcave-m1
-    name: GW - BaTcave - M1
-    description: 'Secondary uplink (M1) from BaTcave'
-    url: 'icmp-ping://gw2.burtnet.xyz'
-    method: GET
-    expectStatus: 200
-    followRedirect: false # should fetch follow redirects, default=false
-    linkable: false # allows the title to be a link, default=true
-
-  - id: gw-onan
-    name: GW - Onan
-    description: 'Uplink (M1) from Onan'
-    url: 'icmp-ping://d9z9q0syxnd.d.firewalla.org'
-    method: GET
-    expectStatus: 200
-    followRedirect: false # should fetch follow redirects, default=false
+    followRedirect: true # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
