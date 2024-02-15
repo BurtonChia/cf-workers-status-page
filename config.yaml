@@ -16,18 +16,18 @@ settings:
 
 monitors:
   - id: email-imap
-    name: MXroute Email - IMAP
-    description: 'MXroute Email - IMAP'
-    url: 'tcp://moose.mxrouting.net:993'
+    name: ForwardEmail - IMAP
+    description: 'ForwardEmail - IMAP'
+    url: 'tcp://imap.forwardemail.net:993'
     method: GET
     expectStatus: 200
     followRedirect: false # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
 
   - id: email-smtp
-    name: MXroute Email - SMTP
-    description: 'MXroute Email - SMTP'
-    url: 'tcp://moose.mxrouting.net:465'
+    name: ForwardEmail - SMTP
+    description: 'ForwardEmail - SMTP'
+    url: 'tcp://smtp.forwardemail.net:465'
     method: GET
     expectStatus: 200
     followRedirect: false # should fetch follow redirects, default=false
