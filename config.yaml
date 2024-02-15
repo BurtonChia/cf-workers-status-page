@@ -15,24 +15,6 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: email-imap
-    name: ForwardEmail - IMAP
-    description: 'ForwardEmail - IMAP'
-    url: 'tcp://imap.forwardemail.net'
-    method: GET
-    expectStatus: 200
-    followRedirect: false # should fetch follow redirects, default=false
-    linkable: false # allows the title to be a link, default=true
-
-  - id: email-smtp
-    name: ForwardEmail - SMTP
-    description: 'ForwardEmail - SMTP'
-    url: 'tcp://smtp.forwardemail.net'
-    method: GET
-    expectStatus: 200
-    followRedirect: false # should fetch follow redirects, default=false
-    linkable: false # allows the title to be a link, default=true
-    
   - id: webapp-actual # unique identifier
     name: WebApp - Actual
     description: 'Actual @ Hostinger VPS' # default=empty
