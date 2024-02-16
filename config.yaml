@@ -15,6 +15,15 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
+  - id: webapp-snappymail # unique identifier
+    name: WebApp - Snappy Mail
+    description: 'Snappy Mail @ Hostinger VPS' # default=empty
+    url: 'https://webmail.burtnet.xyz/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: true # allows the title to be a link, default=true
+    
   - id: webapp-actual # unique identifier
     name: WebApp - Actual
     description: 'Actual @ Hostinger VPS' # default=empty
