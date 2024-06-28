@@ -15,20 +15,20 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:    
-  - id: webapp-actual # unique identifier
-    name: WebApp - Actual
-    description: 'Actual @ Hostinger VPS' # default=empty
-    url: 'https://finance.burtnet.xyz/' # URL to fetch
+  - id: doh1 # unique identifier
+    name: Technitium DNS - DoH 1
+    description: 'Technitium DNS - DoH 1' # default=empty
+    url: 'https://dns1.burtnet.xyz/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: true # should fetch follow redirects, default=false
     linkable: true # allows the title to be a link, default=true
 
-  - id: webapp-portainer
-    name: WebApp - Portainer
-    description: 'Portainer @ Hostinger VPS'
-    url: 'https://docker.burtnet.xyz/'
-    method: GET
+  - id: doh2 # unique identifier
+    name: Technitium DNS - DoH 2
+    description: 'Technitium DNS - DoH 2' # default=empty
+    url: 'https://dns2.burtnet.xyz/' # URL to fetch
+    method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: true # should fetch follow redirects, default=false
     linkable: true # allows the title to be a link, default=true
