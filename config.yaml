@@ -17,7 +17,7 @@ settings:
 monitors:    
   - id: doh1 # unique identifier
     name: Technitium DNS - DoH 1
-    description: 'Technitium DNS - DoH 1' # default=empty
+    description: 'BurtNet DoH 1 - powered by TechnitiumDNS' # default=empty
     url: 'https://dns1.burtnet.xyz/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
@@ -26,7 +26,7 @@ monitors:
 
   - id: doh2 # unique identifier
     name: Technitium DNS - DoH 2
-    description: 'Technitium DNS - DoH 2' # default=empty
+    description: 'BurtNet DoH 2 - powered by TechnitiumDNS' # default=empty
     url: 'https://dns2.burtnet.xyz/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
