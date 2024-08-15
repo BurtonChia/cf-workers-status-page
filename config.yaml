@@ -41,3 +41,21 @@ monitors:
     expectStatus: 200
     followRedirect: true # should fetch follow redirects, default=false
     linkable: true # allows the title to be a link, default=true
+
+  - id: webapp-pb
+    name: WebApp - Pastebin
+    description: 'Pastebin - powered by Cloudflare Workers'
+    url: 'https://pb.burtnet.xyz'
+    method: GET
+    expectStatus: 200
+    followRedirect: true # should fetch follow redirects, default=false
+    linkable: true # allows the title to be a link, default=true
+
+  - id: storj
+    name: Storj Node
+    description: 'Storj Node @ TrueNAS'
+    url: 'http://storj.reachburt.com:28967'
+    method: GET
+    expectStatus: 200
+    followRedirect: true # should fetch follow redirects, default=false
+    linkable: true # allows the title to be a link, default=true
